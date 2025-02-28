@@ -39,6 +39,57 @@
             <artifactId>webdrivermanager</artifactId>
             <version>5.7.0</version>
         </dependency>
+        <dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-java</artifactId>
+        <version>4.17.0</version>
+    </dependency>
+
+    <!-- TestNG -->
+    <dependency>
+        <groupId>org.testng</groupId>
+        <artifactId>testng</artifactId>
+        <version>7.9.0</version>
+        <scope>test</scope>
+    </dependency>
+
+    <!-- JAX-RS API -->
+    <dependency>
+        <groupId>jakarta.ws.rs</groupId>
+        <artifactId>jakarta.ws.rs-api</artifactId>
+        <version>3.1.0</version>
+        <scope>provided</scope>
+    </dependency>
+
+    <!-- Javax Validation API -->
+    <dependency>
+        <groupId>jakarta.validation</groupId>
+        <artifactId>jakarta.validation-api</artifactId>
+        <version>3.0.2</version>
+    </dependency>
+
+    <!-- Javax Inject -->
+    <dependency>
+        <groupId>jakarta.inject</groupId>
+        <artifactId>jakarta.inject-api</artifactId>
+        <version>2.0.1</version>
+    </dependency>
+    
+    
+    <dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>6.7</version>
+    <scope>test</scope>
+</dependency>
+
+
+    <!-- Javax Enterprise -->
+    <dependency>
+        <groupId>jakarta.enterprise</groupId>
+        <artifactId>jakarta.enterprise.cdi-api</artifactId>
+        <version>3.0.1</version>
+    </dependency>
     </dependencies>
 
     <build>
@@ -54,16 +105,6 @@
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
-            <plugin>
-    <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-surefire-plugin</artifactId>
-    <version>3.0.0-M7</version>
-    <configuration>
-        <suiteXmlFiles>
-            <suiteXmlFile>testng.xml</suiteXmlFile>
-        </suiteXmlFiles>
-    </configuration>
-</plugin>
         </plugins>
     </build>
 
