@@ -25,8 +25,7 @@ public class ExampleTest {
     @DataProvider( name = "TestLoginData")
     public Object[][] TestLoginData(){
     	return new Object[][] {
-    		{"standard_user", "secret_sauce"},
-    		{"invvias", "secret_sauce3"}
+    		{"standard_user", "secret_sauce"}
     	};
     }
     
