@@ -1,0 +1,26 @@
+<hibernate-configuration>
+    <session-factory>
+        <!-- JDBC Database connection settings -->
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property> <!-- Change dialect if using a different DB -->
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/your_database</property> <!-- Replace with your DB URL -->
+        <property name="hibernate.connection.username">your_username</property> <!-- DB Username -->
+        <property name="hibernate.connection.password">your_password</property> <!-- DB Password -->
+
+        <!-- JDBC connection pool settings -->
+        <property name="hibernate.c3p0.min_size">5</property>
+        <property name="hibernate.c3p0.max_size">20</property>
+        
+        <!-- Specify the JDBC batch size -->
+        <property name="hibernate.jdbc.batch_size">50</property>
+
+        <!-- Echo all executed SQL to stdout -->
+        <property name="hibernate.show_sql">true</property>
+        
+        <!-- Drop and re-create the database schema on startup -->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+        <!-- Mention annotated class -->
+        <mapping class="com.yourpackage.YourEntity" />
+    </session-factory>
+</hibernate-configuration>
